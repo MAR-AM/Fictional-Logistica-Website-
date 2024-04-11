@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" id="haut de page">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fonctionnalité</title>
+  <style>
+    nav{
+            border-top:solid 5px  #FF3030;
+    }
+    .navbar-brand{
+            font-weight: bold;
+            background-color: #FF3030;
+            padding:10px 30px;
+            margin-top: -10px;
+            margin-left: -15px;
+    }
+    .nav-link{
+            color: black;
+    }
+    .nav-link:hover{
+            color: #FF3030;
+    }
+    .dropdown-item{
+            color: black;
+    }
+    .dropdown-item:hover{
+            color: white;
+            background-color:#FF3030;
+    }
+    .Active{
+      color: #FF3030;
+    }
+    .dropdown-item-Active{
+        background-color: #FF3030;
+        color: white;
+    }
+    .tele i{
+        background-color: #FF3030;        
+        color: white;
+        width: 50px;
+        height: 50px;
+        display: grid;
+        place-items: center;
+        font-size: xx-large;
+    }
+    .tele p{
+        margin-left: 20px ;
+        font-weight: bold;
+    }
+    .tele span{
+        color: #FF3030;
+    }
+   .tele{
+       display: flex;
+       align-items: center;
+       margin-top: 10px;
+    }
+    .card h1{
+        font-weight: bold;
+
+    }
+    .card h6{
+        color: darkturquoise;
+    }
+    .card p{
+        margin-top: 10px;
+    }
+    .card{
+        width: 500px;
+    }
+    .rouge{
+      background-color: #FF3030;
+      color: white;
+    }
+    .bleu{
+      background-color: darkturquoise;
+      color: white;
+    }
+    .vert{
+      background-color: darkgreen;
+      color: white;
+    }
+    .bleu,.rouge,.vert{
+      width: 90%;
+      padding: 10px;
+      margin-top: 20px;
+      margin-left: 70px;
+      
+    }
+    .carre span{
+      font-weight:bold;
+      font-size: x-large;
+    }
+    .container{
+      display: flex;
+      flex-direction: row;
+      margin-top: 5%;
+    }
+    .carre{
+      display: flex;
+      align-items: center;
+    }
+    .vert{
+      margin-left: 70px;
+    }
+    .icon{
+      display: flex;
+      align-items:normal;
+      margin-top: 10px;
+    }
+    .icon i{
+      font-size:250%;
+      color: #FF3030;
+    }
+    .p{
+      margin-left: 20px;
+    }
+    img{
+      width:550px;
+      height: 500px;
+    }
+    img{
+      margin-left:80px;
+      margin-top: 40px;
+    }
+    @media screen and (max-width:900px) {
+      .container{
+        margin-top: 10%;
+        flex-direction: column;
+      
+      }
+      img{
+        margin-left: 0px;
+        margin-bottom: 30px;
+      }
+    }
+
+    footer b{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+        }
+        .col-lg-3{
+            line-height: 35px;}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Logistica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav ms-auto" >
+                  <li class="nav-item" ><a class="nav-link " href="Index.html">DOMICILE</a></li>
+                  <li class="nav-item"><a class="nav-link " href="environ.html">ENVIRON</a></li>
+                  <li class="nav-item"><a class="nav-link " href="Service.html">SERVICES</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle Active " data-bs-toggle="dropdown" href="#">PAGES</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Plan_tarifaire.html">Plan tarifaire</a></li>
+                            <li><a class="dropdown-item dropdown-item-Active" href="fonctionnalite.html">Fonctionnalités</a></li>
+                            <li><a class="dropdown-item" href="devis_gratuit.html">Devis gratuit </a></li>
+                            <li><a class="dropdown-item" href="notre_equipe.htmlD">Notre équipe</a></li>
+                            <li><a class="dropdown-item" href="attestation.html">Attestation</a></li>
+                            <li><a class="dropdown-item" href="404_page.html">404 Page (en anglais)</a></li>
+                        </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link " href="#">CONTACT</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark disabled" href="#"> 
+                        <i class="fa-solid fa-headphones" style="color: #FF3030;"></i>
+                        <b>+012 345 6789</b>   
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+  <div class="container">
+    <div class="card border-0 ">
+      <h6>QUELQUES FAITS</h6>
+      <h1>#1 Endroit pour gerer toutes vos expeditions</h1>
+      <p> Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. 
+          Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+      <div class="tele">
+          <i class="fa fa-headphones "></i>
+          <p>Appelez pour toute question !<br>
+          <span>+012 345 6789</span></p>
+      </div>
+    </div>
+    
+      <div class="carre">
+
+        <div class="card1">
+
+          <div class="rouge">
+            <p><span><i class="fa fa-users"></i><br>
+              1234</span><br>
+              Des clients satisfaits
+            </p>
+          </div>
+  
+          <div class="bleu">
+            <p><span><i class="fa fa-subway"></i><br>
+              1234</span><br>
+              Expeditios completes
+            </p>
+          </div>
+
+        </div>
+
+        <div class="card2">
+
+          <div class="vert">
+            <p><span><i class="fa fa-star"></i><br>
+              1234</span><br>
+              Evaluations du produit
+            </p>
+          </div>
+
+        </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="card border-0 " >
+      <h6>NOS CARACTERISTIQUES</h6>
+      <h2><b>Nous sommes une entreprise de logistique de confiance depuis 1990</b></h2>
+      <p> Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. 
+          Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+      <div class="icon">
+          <i class="fa fa-globe" ></i>
+          <div class="p">
+            <h5><b>Service dans le monde entier</b></h5>
+            <p>Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+          </div>
+      </div>
+
+      <div class="icon">
+       <i class="fa fa-truck" ></i>
+        <div class="p">
+          <h5><b>Livraison a temps</b></h5>
+          <p>Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+        </div>
+    </div>
+    
+    <div class="icon">
+      <i class="fa fa-headphones "></i>
+       <div class="p">
+         <h5><b>Assistance telephonique 24h/24 et 7j/7</b></h5>
+         <p>Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+       </div>
+   </div>
+  
+  </div>
+
+  <div class="image">
+    <img src="IMG7.webp">
+   </div>
+
+  </div>
+  <button type="button" class="btn  btn-floating btn-lg border-0 rounded-0 " id="btn-back-to-top" style=" position: fixed; bottom: 20px;right: 20px;z-index: 999; background-color: red;">
+    <a href="#haut de page"><i class="fas fa-arrow-up text-white "></i></a>
+  </button>
+
+  <footer class="container-fluid bg-black text-white">
+    <div class="row p-5">
+        <div class="col-lg-3 mt-4">
+            <h4>Adresse</h4>
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <b>123 Street, New York, Etats-Unis</b>
+            </div>
+            <div>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <b>+012 345 67890</b>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <b>info@example.com</b>
+            </div>
+            <div>
+                <i class="fa fa-twitter  border rounded-circle p-2"><a href=""></a></i>
+                <i class="fa fa-facebook  border rounded-circle p-2" ></i>
+                <i class="fa fa-youtube-play  border rounded-circle p-2"></i>
+                <i class="fa fa-linkedin border rounded-circle p-2"></i> 
+            </div>
+        </div>
+
+        <div class="col-lg-3 mt-4">
+            <h4>Services</h4>
+            <div>
+                <b> > Fret Aerien</b> <br>
+                <b> > Fret Maritime</b> <br>
+                <b> > Fret Routier</b> <br>
+                <b> > Solutions Logistiques</b> <br>
+                <b> > Solutions Sectorielles</b>
+            </div>
+        </div><br>
+
+        <div class="col-lg-3 mt-4">
+            <h4>Liens rapides</h4>
+            <div>
+                <b> > Qui Sommes-Nous</b> <br>
+                <b> > Contactez-Nous</b> <br>
+                <b> > Nos Services</b> <br>
+                <b> > Termes Et Conditions</b> <br>
+                <b> > Soutien</b>
+            </div>
+        </div><br>
+
+        <div class="col-lg-3 mt-4">
+            <h4>Bulletin</h4>
+            <div><br>
+                <b>Dolor amet sit justo amet elitr clita ipsum elitr est. </b> <br>
+                <form class="d-flex bg-white">
+                    <input class="form-control  border-0 rounded-0" type="text" placeholder="Votre adresse e-mail">
+                    <button class="btn border-0 rounded-0 p-2 m-2" style="background-color: #FF3030;color: white;" type="button">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>
